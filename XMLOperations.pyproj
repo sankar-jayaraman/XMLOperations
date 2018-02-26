@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>420e3b83-ec00-4fff-9600-7418ef6c7116</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>XMLOperations.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>XMLOperations</Name>
+    <RootNamespace>XMLOperations</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>input output</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="additionChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="complexOperationEvaluator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="divisionChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="expressionsChecker.py" />
+    <Compile Include="integerResultWriter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\operationEvaluator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\resultWriter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\xmlFormChecker.py" />
+    <Compile Include="multiplicationChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="operationCheckSelector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="operationTypeSelector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="simpleOperationEvaluator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="subtractionChecker.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\additionCheckerTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\complexOperationEvaluatorTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\divisionCheckerTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\expressionsCheckerTest.py" />
+    <Compile Include="Unit Tests\integerResultWriterTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\multiplicationCheckerTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\operationCheckSelectorTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\simpleOperationEvaluatorTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\operationTypeSelectorTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unit Tests\subtractionCheckerTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XMLOperations.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Unit Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
