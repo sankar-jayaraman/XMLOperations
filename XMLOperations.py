@@ -66,7 +66,7 @@ for file in os.listdir(inputDir):
             results['ERROR: '] = err.args[0]
             WriteToOutputXML(results, file, outputDir)
     
-print ('All input XML files processed successfully !! ')
+        print ('File ' + file + ' processed successfully !! ')
 
 
 
