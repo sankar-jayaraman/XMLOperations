@@ -3,3 +3,15 @@
 ################################################################################
 
 /Interfaces
+/Unit Tests
+/multiplicationChecker.pyc
+/integerResultWriter.pyc
+/expressionsChecker.pyc
+/divisionChecker.pyc
+/complexOperationEvaluator.pyc
+/additionChecker.pyc
+/subtractionChecker.pyc
+/simpleOperationEvaluator.pyc
+/operationTypeSelector.pyc
+/operationCheckSelector.pyc
+/__pycache__

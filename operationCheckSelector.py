@@ -14,6 +14,7 @@ class OperationCheckSelector(object):
              return DivisionChecker()
         elif child.tag == 'multiplication':
              return MultiplicationChecker()  
-
+        else:
+             raise SyntaxError('SubElement of expressions must be one of addition, subtraction, division or multiplication')   
 
 
